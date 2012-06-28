@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingTop="10dp" android:paddingBottom="10dp" >
+
+    <TextView
+        android:id="@+id/lbl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/img_thumb"
+        android:text="The Shins - New Slang (Garden State)"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/img_thumb"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/border"
+        android:padding="2dp"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/lbl_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_title"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lbl_title"
+        android:textSize="12sp"
+        android:text="suinobellico" />
+
+    <TextView
+        android:id="@+id/lbl_published"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lbl_author"
+        android:layout_below="@+id/lbl_author"
+        android:textSize="12sp"
+        android:text="4 years ago | 2,884,542 views" />
+
+    <TextView
+        android:id="@+id/lbl_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/img_thumb"
+        android:layout_alignRight="@+id/img_thumb"
+        android:layout_marginBottom="4dp"
+        android:layout_marginRight="3dp"
+        android:background="#FF000000"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="03:47"
+        android:textColor="@android:color/secondary_text_dark"
+        android:textSize="12sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

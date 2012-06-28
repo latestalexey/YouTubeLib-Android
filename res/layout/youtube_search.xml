@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/lay_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:layout_centerVertical="true"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <TextView
+            android:id="@+id/lbl_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@id/btn_search"
+            android:text="Results for &quot;The Shins Simple Song&quot;"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/frg_youtube"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/lay_search"
+        class="com.t2.youtube.YouTubeSearchFragment" >
+    </fragment>
+
+    <ProgressBar
+        android:id="@+id/img_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminateOnly="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
